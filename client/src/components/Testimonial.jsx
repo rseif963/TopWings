@@ -5,9 +5,9 @@ import { assets } from '../assets/assets';
 const Testimonial = () => {
 
     const testimonials = [
-        { name: "Rashid Seif", address: "Nairobi, Kenya", image: assets.testimonial_image_1, testimonial: "I have rented cars from various companies, but the experience with Top Wings was exceptional" },
-        { name: "Rhodah Wanjiku", address: "Nairobi, Kenya", image: assets.testimonial_image_2, testimonial: "Top Wings made my trip so much easier. The car was delivered right to my door, and the customer service was fantastic!" },
-        { name: "Ritah Atieno", address: "Nairobi, Kenya", image: assets.testimonial_image_1, testimonial: "I highly recomend Top Wings! Their fleet is amazing, and I always feel like I'm getting the best deal with excellent services" }
+        { name: "Rashid Seif", address: "Nairobi, Kenya", image: assets.testimonial_2, testimonial: "I have rented cars from various companies, but the experience with Top Wings was exceptional" },
+        { name: "Rhodah Wanjiku", address: "Nairobi, Kenya", image: assets.testimonial_3, testimonial: "Top Wings made my trip so much easier. The car was delivered right to my door, and the customer service was fantastic!" },
+        { name: "Farhiya Mohamed", address: "Nairobi, Kenya", image: assets.testimonial_1, testimonial: "I highly recomend Top Wings! Their fleet is amazing, and I always feel like I'm getting the best deal with excellent services" }
     ];
 
   return (
