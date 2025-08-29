@@ -29,7 +29,7 @@ export const AppProvider = ({ children }) => {
                 setUser(data.user)
                 setIsOwner(data.user.role === 'owner')
             } else {
-                navigate('/')
+                setUser(false)
             }
         } catch (error) {
             toast.error(error.message)
