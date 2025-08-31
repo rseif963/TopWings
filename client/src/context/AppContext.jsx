@@ -28,8 +28,8 @@ export const AppProvider = ({ children }) => {
             if (data.success) {
                 setUser(data.user)
                 setIsOwner(data.user.role === 'owner')
-            } else {
-                toast.error(data.message)
+            } //else {
+                //toast.error(data.message)
             }
         } catch (error) {
             toast.error(error.message)
