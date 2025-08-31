@@ -89,6 +89,10 @@ const CarDetails = () => {
         <form onSubmit={handleSubmit} className='shadow-lg h-max sticky top-18 rounded-xl p-6 space-y-6 text-grey-500'>
           <p className='flex items-center justify-between text-2xl text-grey-800 font-semibold'>{currency} {car.pricePerDay}<span className='text-base text-grey-400 font-normal'> per day</span></p>
           <hr className='border-borderColor my-6' />
+          <div className='flex flex-col w-full'>
+              <label>Phone Number</label>
+              <input type="number" placeholder="+254" required className='px-3 py-2 mt-1 border border-borderColor rounded-md outline-none' />
+            </div>
           <div className='flex flex-col gap-2'>
             <label htmlFor="pickup-date">Pickup Date</label>
             <input value={pickupDate} onChange={(e)=>setPickupDate(e.target.value)} type="date" className='border-borderColor px-3 py-2 rounded-lg' required id='pickup-date' min={new Date().toISOString().split('T')[0]} />
