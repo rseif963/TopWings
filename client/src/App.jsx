@@ -5,6 +5,7 @@ import Home from './pages/Home'
 import CarDetails from "./pages/CarDetails";
 import Cars from "./pages/Cars";
 import ClientBookings from "./pages/ClientBookings";
+import LeaseCar from "./pages/LeaseCar";
 import Footer from './components/Footer';
 import Layout from "./pages/owner/Layout";
 import Dashboard from "./pages/owner/Dashboard";
