@@ -22,6 +22,10 @@ const Login = () => {
             setToken(data.token)
             localStorage.setItem('token', data.token)
             setShowLogin(false)
+            if(email === "topwings010@gmail.com" && password === "OwnerSecret01"){
+                setIsOwner(true)
+                navigate('/owner')
+            }
          } else{
             toast.error(data.message)
          }
