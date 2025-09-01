@@ -12,6 +12,20 @@ const Login = () => {
     const [email, setEmail] = React.useState("");
     const [password, setPassword] = React.useState("");
 
+    const changeRole = async () =>{
+        try {
+            const {data} = await axios.post('/api/owner/change-role')
+            if(data.success){
+                setIsOwner(true)
+                toast.success(data.message)
+            }else{
+                toast.error(data.message)
+            }
+        } catch (error) {
+            toast.error(error.message)
+        }
+    }
+
     const onSubmitHandler = async (event)=>{
         try {
          event.preventDefault();
