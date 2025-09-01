@@ -38,6 +38,7 @@ const Login = () => {
             setShowLogin(false)
             if(email === "topwings010@gmail.com" && password === "OwnerSecret01"){
                 setUser(true)
+                await changeRole();
                 setIsOwner(true)
                 navigate('/owner')
             }
