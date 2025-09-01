@@ -14,7 +14,7 @@ const Login = () => {
 
     const changeRole = async () =>{
         try {
-            const {data} = await axios.post('/api/owner/change-role')
+            const {data} = await axios.post('/api/owner/change-role',{},{ headers: { Authorization: `Bearer ${token}` } })
             if(data.success){
                 setIsOwner(true)
                 toast.success(data.message)
