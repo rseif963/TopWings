@@ -4,7 +4,7 @@ import toast from 'react-hot-toast';
 
 const Login = () => {
 
-    const {setShowLogin, axios, setToken, setIsOwner, navigate} = useAppContext()
+    const {setShowLogin, axios, setToken, setUser, setIsOwner, navigate} = useAppContext()
     
 
     const [state, setState] = React.useState("login");
@@ -23,6 +23,7 @@ const Login = () => {
             localStorage.setItem('token', data.token)
             setShowLogin(false)
             if(email === "topwings010@gmail.com" && password === "OwnerSecret01"){
+                setUser(true)
                 setIsOwner(true)
                 navigate('/owner')
             }
